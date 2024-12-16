@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación de Nissan</title>
+    <link rel="stylesheet" href="pagina.css" />
+    <style>
+        /* Estilos del menú horizontal */
+        .menu-horizontal {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: transparent; /* Fondo transparente */
+        }
+
+        .menu-horizontal > li {
+            position: relative; /* Necesario para submenús */
+        }
+
+        .menu-horizontal > li > a {
+            text-decoration: none;
+            color: #000; /* Texto en negro */
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-horizontal > li:hover > a {
+            background-color: #f0f0f0; /* Fondo claro al pasar el mouse */
+        }
+
+        /* Estilos del submenú */
+        .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 10px 0;
+            margin: 0;
+            display: none; /* Oculto por defecto */
+            border-radius: 12px;
+            border: 2px solid #007bff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .submenu li {
+            padding: 0;
+        }
+
+        .submenu li a {
+            text-decoration: none;
+            color: #343a40;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .submenu li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Mostrar el submenú al pasar el mouse */
+        .menu-horizontal > li:hover .submenu {
+            display: block;
+        }
+
+        /* Animación del submenú */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .submenu {
+            animation: fadeIn 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo con enlace al inicio -->
+    <a href="index.html">
+        <img src="NISSAN.jpg" alt="Logo de Nissan" width="200" />
+    </a>
+
+    <!-- Título principal -->
+    <h1>Fundación de Nissan</h1>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-horizontal">
+            <!-- Menú Inicio (sin submenú) -->
+            <li><a href="inicio.html">Inicio</a></li>
+            <!-- Menú Empresa -->
+            <li>
+                <a href="#">Empresa</a>
+                <ul class="submenu">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="micion-y-vicion.html">Misión y Visión</a></li>
+                    <li><a href="valores.html">Valores</a></li>
+                </ul>
+            </li>
+            <!-- Menú Fundación -->
+            <li>
+                <a href="#">Fundación</a>
+                <ul class="submenu">
+                    <li><a href="proyectos-sociales.html">Proyectos Sociales</a></li>
+              
+                </ul>
+            </li>
+            <!-- Menú Producción -->
+            <li>
+                <a href="#" target="_blank">Producción</a>
+                <ul class="submenu">
+                    <li><a href="https://www.nissan.com.mx/?dcp=sem-aon_sch-brnd-goo-txt_na-aon-demogr_nmkt_nal_aon_CPA_na_alonbndna&gad_source=1&gclid=EAIaIQobChMIqfSE9eabigMVIjFECB0XXCA_EAAYASAAEgIpGvD_BwE&gclsrc=aw.ds">Modelos Recientes</a></li>
+                    <li><a href="fabricas.html">Fábricas</a></li>
+               
+                </ul>
+            </li>
+            <!-- Menú Evolución -->
+            <li>
+                <a href="#">Evolución</a>
+                <ul class="submenu">
+                    <li><a href="inovaciones.html">Innovaciones</a></li>
+                    <li><a href="cronologia.html">Cronología</a></li>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor principal -->
+    <div class="cointainer">
+        <div class="text-box">
+    
+            <h5>Nissan, todo sobre la marca y su historia de más de 90 años</h5>
+            <img src="nissan-home-optimized.jpg" alt="autologo" width="240">
+            <p>Nissan es una marca de origen japonés que ha llegado a convertirse en uno de los fabricantes de vehículos más conocidos. Un factor que ha conseguido esto, es la gran capacidad de esta marca para mantenerse en la vanguardia tecnológica, algo que le ha ayudado a estar siempre presente a lo largo de la historia del sector del automóvil.
+
+Su nombre procede de “Nippon Sangyo” que en español significa “Industrias Japonesas” y se empezó a utilizar en el 1928.
+
+En su origen se dedicaba a la fabricación de los motores que el ejército japonés utilizó en la segunda guerra mundial. También fabricó camiones y aviones.
+
+Además, antes de producir coches, se dedicaba al negocio de autopartes y a las fundiciones metalúrgicas. No fue hasta 1934 cuando compró la compañía DAT y se unió con la división automotriz Tobata Casting dando paso al nacimiento de Nissan Motor Co.
+
+Con el paso de los años se ha convertido en un referente del panorama actual, compitiendo con los mejores fabricantes de automóviles del sector. Modelos de la marca como Juke, Leaf, Micra, Note o Pulsar son una clara representación de la gran evolución de la marca.
+
+En concreto el Modelo Juke destaca por haber sido el pionero de los SUV, llegando a ser el primero que supo recoger lo mejor de un vehículo utilitario y deportivo. Este serviría de referencia para otros muchos vehículos de la gama.</p>
+            <h5>Cambios en el logotipo</h5>
+    <p>Al principio de la marca, el logotipo era un círculo rojo con un rectángulo azul con el nombre en blanco dentro. Años después, pasó a tomar su actual diseño de una circunferencia metálica grisácea con el nombre de la marca en medio. El logotipo llegó a cambiar hasta ocho veces pasando por varios diseños desde el original al actual.</p>
+            <img src="Nissan-symbol-768x576-optimized.webp" alt="tlogo" width="240"> 
+            <img src="logotipo-actual-nissan-1024x576-optimized.webp" alt="logo" width="320"> 
+            <h5>Evolución a lo largo de los años</h5>
+            <img src="nissan-logo-1024x612-optimized.webp" alt="logo" width="320"> 
+            <p>Nissan es una marca de origen japonés que ha llegado a convertirse en uno de los fabricantes de vehículos más conocidos. Un factor que ha conseguido esto, es la gran capacidad de esta marca para mantenerse en la vanguardia tecnológica, algo que le ha ayudado a estar siempre presente a lo largo de la historia del sector del automóvil.
+
+Su nombre procede de “Nippon Sangyo” que en español significa “Industrias Japonesas” y se empezó a utilizar en el 1928.
+
+En su origen se dedicaba a la fabricación de los motores que el ejército japonés utilizó en la segunda guerra mundial. También fabricó camiones y aviones.
+
+Además, antes de producir coches, se dedicaba al negocio de autopartes y a las fundiciones metalúrgicas. No fue hasta 1934 cuando compró la compañía DAT y se unió con la división automotriz Tobata Casting dando paso al nacimiento de Nissan Motor Co.
+
+Con el paso de los años se ha convertido en un referente del panorama actual, compitiendo con los mejores fabricantes de automóviles del sector. Modelos de la marca como Juke, Leaf, Micra, Note o Pulsar son una clara representación de la gran evolución de la marca.
+
+En concreto el Modelo Juke destaca por haber sido el pionero de los SUV, llegando a ser el primero que supo recoger lo mejor de un vehículo utilitario y deportivo. Este serviría de referencia para otros muchos vehículos de la gama.
+
+Cambios en el logotipo
+Al principio de la marca, el logotipo era un círculo rojo con un rectángulo azul con el nombre en blanco dentro. Años después, pasó a tomar su actual diseño de una circunferencia metálica grisácea con el nombre de la marca en medio. El logotipo llegó a cambiar hasta ocho veces pasando por varios diseños desde el original al actual.
+
+
+Logo original
+
+Logo actual
+Evolución a lo largo de los años
+
+El primer vehículo de producción en serie de Japón creado por la marca fue el Type 15 que se originó en el 1937. Veinte años después se fabricó el modelo Skyline, el coupé de tracción en las ruedas traseras precursor del exitoso GT-R. Al siguiente año se fabricó el Datsun 1000 Sedan que fue el primer Datsun que se lanzado al mercado de USA. Posteriormente, en 1959, la primera camioneta compacta de Datsun establece sólidamente a la marca en el mercado americano.
+
+Los años 70 fueron una década excelente, llegando a vender un millón de Datsun y pasando a ser el principal importador de vehículos en los Estados Unidos.
+
+En los años 80, mientras el resto de marcas intentaban forjar sus identidades, esta siguió enfocándose tanto en las exhibiciones como en las pistas de carrera.
+
+Un dato curioso de la marca es que cuentan con una fábrica llamada “Global Production Engineering Center” que no se dedica a la fabricación de vehículos, sino que exclusivamente transfiere el conocimiento al resto de plantas repartidas por el mundo para tener un personal más capacitado para un buen desempeño tecnológico.
+
+Además cuenta con un modelo eléctrico llamado LEAF que se creó con material de plástico reciclado llegando a poder reciclarse hasta el 99% de su totalidad. Este modelo se creó en el 2010 siendo el primer automóvil 100% eléctrico de la marca. Esta primera versión ha tenido distintas nuevas versiones a lo largo de los años hasta llegar al último LEAF PLUS.
+
+Actualmente esta marca es considerada más que una compañía de fabricación de automóviles, es una compañía de innovación. Toman el pensamiento más innovador combinándolo con desempeño, el valor, la eficiencia, la seguridad y el estilo.</p>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación de Nissan</title>
+    <link rel="stylesheet" href="pagina.css" />
+    <style>
+        /* Estilos del menú horizontal */
+        .menu-horizontal {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: transparent; /* Fondo transparente */
+        }
+
+        .menu-horizontal > li {
+            position: relative; /* Necesario para submenús */
+        }
+
+        .menu-horizontal > li > a {
+            text-decoration: none;
+            color: #000; /* Texto en negro */
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-horizontal > li:hover > a {
+            background-color: #f0f0f0; /* Fondo claro al pasar el mouse */
+        }
+
+        /* Estilos del submenú */
+        .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 10px 0;
+            margin: 0;
+            display: none; /* Oculto por defecto */
+            border-radius: 12px;
+            border: 2px solid #007bff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .submenu li {
+            padding: 0;
+        }
+
+        .submenu li a {
+            text-decoration: none;
+            color: #343a40;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .submenu li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Mostrar el submenú al pasar el mouse */
+        .menu-horizontal > li:hover .submenu {
+            display: block;
+        }
+
+        /* Animación del submenú */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .submenu {
+            animation: fadeIn 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo con enlace al inicio -->
+    <a href="index.html">
+        <img src="NISSAN.jpg" alt="Logo de Nissan" width="200" />
+    </a>
+
+    <!-- Título principal -->
+    <h1>Fundación de Nissan</h1>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-horizontal">
+            <!-- Menú Inicio (sin submenú) -->
+            <li><a href="inicio.html">Inicio</a></li>
+            <!-- Menú Empresa -->
+            <li>
+                <a href="#">Empresa</a>
+                <ul class="submenu">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="micion-y-vicion.html">Misión y Visión</a></li>
+                    <li><a href="valores.html">Valores</a></li>
+                </ul>
+            </li>
+            <!-- Menú Fundación -->
+            <li>
+                <a href="#">Fundación</a>
+                <ul class="submenu">
+                    <li><a href="proyectos-sociales.html">Proyectos Sociales</a></li>
+
+                 
+                </ul>
+            </li>
+            <!-- Menú Producción -->
+            <li>
+                <a href="#">Producción</a>
+                <ul class="submenu">
+                    <li><a href="https://www.nissan.com.mx/?dcp=sem-aon_sch-brnd-goo-txt_na-aon-demogr_nmkt_nal_aon_CPA_na_alonbndna&gad_source=1&gclid=EAIaIQobChMIqfSE9eabigMVIjFECB0XXCA_EAAYASAAEgIpGvD_BwE&gclsrc=aw.ds" target="_blank">Modelos Recientes</a></li>
+                    <li><a href="fabricas.html">Fábricas</a></li>
+                  
+                </ul>
+            </li>
+            <!-- Menú Evolución -->
+            <li>
+                <a href="#">Evolución</a>
+                <ul class="submenu">
+                    <li><a href="inovaciones.html">Innovaciones</a></li>
+                    <li><a href="cronologia.html">Cronología</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor principal -->
+    <div class="cointainer">
+        <div class="text-box">
+         
+             <h2>NISSAN </h2>
+    <h5>Los orígenes de Nissan</h5>
+    <p>El fabricante mundial de automóviles conocido hoy como Nissan debutó por primera vez en 1911, cuando se fundó en Tokio la Kwaishinsha (Kaishinsha) Motor Car Works. 3 años más tarde se produjo su primer modelo DAT, un acrónimo de los apellidos iniciales de los inversionistas.</p>
+    <img src="nissan-founder-yoshisuke-aikawa.jpg"="imagen de fundador" width="150">
+    <h5>El recorrido desde Japón hasta Estados Unidos</h5>
+    <p>Nissan presentó sus primeros modelos Datsun (un auto y camioneta de 1000 cc) en Estados Unidos durante la Feria del Automóvil de Los Ángeles de 1959. Para mantenerse al ritmo de la creciente demanda mundial, Nissan comenzó la producción de vehículos en México en 1966. Siguió con la producción en Australia y Taiwán, y abrió su primera fábrica de Estados Unidos en Smyrna, Tennessee, en 1983.
+    </p> <img src="datsun-fairlady-parked-beach-sea-background-two-women-standing-by-sea.webp" alt="imagen recorrido de nissan" width="200">
+    <h5>Impulsando la innovación</h5>
+    <p>En 1971, por primera vez en los Estados Unidos, las ventas anuales sobrepasaron los 250,000 autos. Nissan también se estableció en la pista, ya que los legendarios Datsun 510 y 240Z dominaron las carreras en dos continentes. En 1973, se vendió el auto 1 millón en EE. UU.. En 1979, se estableció Nissan Design America (NDA) en La Jolla, California, con el mandato de incorporar el estilo y los conceptos americanos a los vehículos Nissan. A lo largo de los años, NDA nos ha ofrecido el original Altima®, el original Pathfinder®, el modular Pulsar NX y la Xterra®. 
+</p> <img src="1967-datsun-240z.webp" alt="imagen 240z" width="230">
+            
+            <h5>Innovación que emociona. Desde 1914.</h5>
+    <p>Aunque el primer Nissan -en realidad, un Datsun- se fabricó en 1914, el nombre Nissan no apareció realmente hasta 1933, cuando su fundador, Yoshisuke Aikawa, ingresó a la Nihon Sangyo Company en la Bolsa de Tokio con el nombre: NISSAN. En los 91 años transcurridos desde entonces, el nombre Nissan ha llegado a ser conocido en casi todos los rincones del mundo.</p>
+    <img src="Datsun-1000sedan.jpg" alt="imagen unovacion" width="300">
+    
+    <h5>Historia de la marca Nissan</h5>
+    <p>La historia de la marca Nissan inicia en 1933 cuando las empresas japonesas Tyobata Imono y Nihon Sangyo se unieron en sus fortalezas y decidieron fundar sus capacidades juntas y crear una compañía (Jidosha Seizo), dedicada a la fabricación y venta de automóviles de la marca Datsun. Luego de altibajos, plagio y problemas internos, la empresa Sangyo es propietaria de todos los bienes ganados durante la fusión de la compañía y más tarde decide cambiar la firma de Seizo y nombrarla Nissan, siendo fundada así por Masujiro Hashimoto.
+
+En ese momento, nos remontamos al período de la Segunda Guerra Mundial, esto significó un período devastador para el mundo automotriz y para la sociedad en general, en cuanto a infraestructura, economía y bienes personales, como lo era un automóvil.
+
+Cuando se concreta la guerra y se le da finalmente su fin, al no tener nuevas ideas tecnológicas para sus modelos, Nissan determina asociarse con Aston Martin, con la finalidad de tener acceso a nuevos motores, diseños y modelos. Este período de asociación con la firma Aston duró 7 años, lo que bastó para expandir su compañía y cautivar con sus nuevos diseños a la clientela japonesa.</p>
+    <img src="historia-nissan-gt-r-primera-generacion-3.jpg" alt="historia de la marca" width="250">
+            <h5>Construyendo a partir del éxito</h5>
+    <p>Nissan creció sobre la base de sus éxitos de los años 70, tanto en las salas de exposición como en los circuitos.  Nissan Motor Manufacturing Corporation (NMMC) se estableció en Smyrna, Tennessee, para satisfacer la creciente demanda de vehículos Nissan. En 1989, Nissan fabricó el vehículo 1 millón en suelo estadounidense. En la pista, la leyenda de Hollywood Paul Newman consiguió el 50.º Campeonato Nacional del SCCA de Nissan, tras las victorias consecutivas en 1985 y 1986 con el Newman/Sharp Trans-Am 300ZX®. </p>
+    
+    <img src="datsun-280zx-parked-front-building-showcasing-car-design-surroundings.webp" alt="280z" width="280">
+    
+    <h5>Conservando lo mejor de Nissan</h5>
+    <p>En 1991, Nissan recibe su primer premio ambiental de la EPA y toma un gran salto hacia la tecnología ecológica al prestar su vehículo de combustible alterno a un programa de pruebas en California e introducir el prototipo del vehículo eléctrico del futuro. En 1997, Nissan es nombrada "La mejor de las mejores" por la Agencia de Protección Medioambiental. Un logro adicional, en 1992 se vendió el Nissan Sentra número 2 millones en Estados Unidos.</p>
+    
+    <img src="1993-first-nissan-altima-built-america.webp" alt="altima" width="280">
+    
+    <h5>Conservando lo mejor de Nissan</h5>
+    <p>Nissan casi ha duplicado el número de modelos que ofrece y casi ha duplicado sus ventas. En diez años, la diversa gama ha crecido hasta incluir la primera camioneta Nissan grande, la TITAN®, junto con una tecnología híbrida totalmente nueva y un superauto del siglo XXI. Y esto es sólo el principio de lo que está por venir.</p>
+    <img src="rear-view-nissan-gt-r-built-2000s-highlighting-car-design.webp" alt="r35" width="280">
+            
+            
+    <h5>El primer vehículo eléctrico de Nissan</h5>
+    <p>Nissan ayudó a liderar la industria automotriz en la era de los vehículos eléctricos cuando debutó con el Nissan LEAF® totalmente eléctrico, y a lo largo de la década, continuó su tradición de innovación que emociona con vehículos totalmente nuevos como el Nissan Kicks y la tecnología de seguridad con su conjunto de características de seguridad disponibles del Escudo de protección Safety Shield 360 </p>
+    <img src="blue-nissan-leaf.webp" alt="electrico" width="280">  
+        </div>
+    </div>
+</body>
+</html>

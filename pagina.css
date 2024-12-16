@@ -1,0 +1,150 @@
+h1 {
+  text-align: center;
+    font-family: fantasy;
+    
+    
+}
+
+
+h4{
+  background-color: red;
+}
+h2{
+    color: darkred;       
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,   
+    -1px 1px 0 #ffffff,   
+    1px 1px 0 #ffffff;    
+}
+/* Estilo para subtítulos */
+h5{
+  font-family: Arial, sans-serif; /* Fuente moderna y clara */
+  font-size: 20px;               /* Tamaño adecuado para subtítulos */
+  font-weight: 600;              /* Grosor moderado para destacar */
+  color: #ffffff;                /* Texto en blanco para resaltar sobre rojo */
+  text-transform: uppercase;     /* Convierte el texto a mayúsculas */
+  letter-spacing: 1px;           /* Espaciado entre letras */
+  margin-bottom: 10px;           /* Espacio debajo del subtítulo */
+  border-left: 4px solid black;  /* Línea decorativa en negro */
+  padding-left: 10px;            /* Espacio entre la línea y el texto */
+}
+
+.menu-horizontal {
+  list-style: none;          /* Quita los puntos de la lista */
+  padding: 0;
+  display: flex;             /* Coloca los elementos en una hilera */
+  justify-content: center;   /* Centra el menú horizontalmente */
+}
+
+.menu-horizontal li {
+  margin: 0 10px;            /* Espacio entre los cuadros */
+}
+
+.menu-horizontal a {
+  display: block;            /* Hace que el enlace ocupe todo el espacio del cuadro */
+  text-decoration: none;     /* Quita el subrayado de los enlaces */
+  color: black;              /* Color del texto */
+  font-size: 18px;
+  padding: 10px 15px;        /* Espaciado interno para crear los cuadros */
+  border: 2px solid #ddd;    /* Borde de los cuadros */
+  border-radius: 5px;        /* Bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-horizontal a:hover {
+  background-color: #f0f0f0; /* Fondo al pasar el cursor */
+  color: #007bff;            /* Color del texto al pasar el cursor */
+  border-color: #007bff;     /* Cambia el color del borde en hover */
+}
+}
+h3 {
+  font-family: Arial, sans-serif; /* Fuente Arial */
+  font-size: 18px;                /* Tamaño de fuente adecuado para subtítulos */
+  font-weight: 600;               /* Grosor moderado para resaltar como subtítulo */
+  color: white;                   /* Color blanco */
+}
+body {
+  background-color: #c40030; /* Rojo oscuro */
+}
+.cointeiner{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+
+.text-box{
+    background: transparent;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6)
+        
+    
+}
+
+  /* Estilos del submenú */
+    .submenu {
+      list-style: none;
+      position: absolute;
+      top: 100%; /* Aparece debajo del elemento principal */
+      left: 0;
+      background-color: #ffffff; /* Fondo blanco */
+      margin: 0;
+      padding: 10px 0;
+      display: none; /* Oculto por defecto */
+      border-radius: 12px; /* Bordes redondeados */
+      border: 2px solid #007bff; /* Borde azul */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+
+    .submenu li {
+      padding: 0;
+    }
+
+    .submenu li a {
+      text-decoration: none;
+      color: #343a40; /* Texto oscuro */
+      padding: 10px 15px;
+      display: block;
+      font-size: 14px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease; /* Efecto suave */
+    }
+
+    .submenu li a:hover {
+      background-color: #007bff; /* Fondo azul al pasar el mouse */
+      color: #fff; /* Texto blanco */
+    }
+
+    /* Mostrar el submenú al pasar el mouse */
+    .menu > li:hover .submenu {
+      display: block;
+    }
+
+    /* Animación del submenú */
+    .submenu {
+      animation: fadeIn 0.3s ease-out; /* Suavidad al desplegar */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+
+
+
+
+
+
+
+

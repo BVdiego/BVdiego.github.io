@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación de Nissan</title>
+    <link rel="stylesheet" href="pagina.css" />
+    <style>
+        /* Estilos del menú horizontal */
+        .menu-horizontal {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: transparent; /* Fondo transparente */
+        }
+
+        .menu-horizontal > li {
+            position: relative; /* Necesario para submenús */
+        }
+
+        .menu-horizontal > li > a {
+            text-decoration: none;
+            color: #000; /* Texto en negro */
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-horizontal > li:hover > a {
+            background-color: #f0f0f0; /* Fondo claro al pasar el mouse */
+        }
+
+        /* Estilos del submenú */
+        .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 10px 0;
+            margin: 0;
+            display: none; /* Oculto por defecto */
+            border-radius: 12px;
+            border: 2px solid #007bff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .submenu li {
+            padding: 0;
+        }
+
+        .submenu li a {
+            text-decoration: none;
+            color: #343a40;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .submenu li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Mostrar el submenú al pasar el mouse */
+        .menu-horizontal > li:hover .submenu {
+            display: block;
+        }
+
+        /* Animación del submenú */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .submenu {
+            animation: fadeIn 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo con enlace al inicio -->
+    <a href="index.html">
+        <img src="NISSAN.jpg" alt="Logo de Nissan" width="200" />
+    </a>
+
+    <!-- Título principal -->
+    <h1>Fundación de Nissan</h1>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-horizontal">
+            <!-- Menú Inicio (sin submenú) -->
+            <li><a href="inicio.html">Inicio</a></li>
+            <!-- Menú Empresa -->
+            <li>
+                <a href="#">Empresa</a>
+                <ul class="submenu">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="micion-y-vicion.html">Misión y Visión</a></li>
+                    <li><a href="valores.html">Valores</a></li>
+                </ul>
+            </li>
+            <!-- Menú Fundación -->
+            <li>
+                <a href="#">Fundación</a>
+                <ul class="submenu">
+                    <li><a href="proyectos-sociales.html">Proyectos Sociales</a></li>
+                
+                </ul>
+            </li>
+            <!-- Menú Producción -->
+            <li>
+                <a href="#" >Producción</a>
+                <ul class="submenu">
+                    <li><a href="https://www.nissan.com.mx/?dcp=sem-aon_sch-brnd-goo-txt_na-aon-demogr_nmkt_nal_aon_CPA_na_alonbndna&gad_source=1&gclid=EAIaIQobChMIqfSE9eabigMVIjFECB0XXCA_EAAYASAAEgIpGvD_BwE&gclsrc=aw.ds"  target="_blank">Modelos Recientes</a></li>
+                    <li><a href="fabricas.html">Fábricas</a></li>
+              
+                </ul>
+            </li>
+            <!-- Menú Evolución -->
+            <li>
+                <a href="#">Evolución</a>
+                <ul class="submenu">
+                    <li><a href="inovaciones.html">Innovaciones</a></li>
+                    <li><a href="cronologia.html">Cronología</a></li>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor principal -->
+    <div class="cointainer">
+        <div class="text-box">
+          
+            <h5>Misión Agencia Datsun Nissan</h5>
+            <p>Somos un grupo empresarial de tradición y líder del mercado que aporta bienestar económico y social a todos nuestros clientes, empleados y proveedores.
+
+Nuestro compromiso es hacer sentir al cliente la mejor experiencia de compra y servicio automotriz que cualquier agencia puede ofrecer, tratándolo como nuestro mejor invitado, con la confianza y amabilidad de una casa, a través de la mejor atención, rica en calidad, cortesía, honestidad, trato amistoso y el mejor seguimiento y cuidado de post-venta;  con personal altamente calificado, con el respaldo de la mejor gama de autos de valor, lujo, seguridad, diseño, confort, prestigio y calidad mundial como lo es NISSAN.
+
+Contamos con  un equipo de trabajo de gran experiencia en los departamentos de Autos Nuevos y Semi-Nuevos, Repuestos y Taller que brindan a nuestros clientes un servicio eficiente, eficaz y coordinado a través del trabajo en equipo, una atención cálida y humana, optimizando el tiempo y aprovechando al máximo los recursos y sobre todo manteniendo las normas en todos nuestro procesos para que garanticen la sostenibilidad y armonía con la naturaleza.
+
+Finalmente lo que buscamos es lograr su satisfacción total y así hacer que todo aquel que compra en Agencia Datsun se sienta orgulloso  de pertenecer a la familia de Nissan.
+
+</p>
+            <h5>Visión Agencia Datsun Nissan</h5>
+            <p>Ser una empresa reconocida por su calidad de servicio, seriedad y calidez en el trato.
+
+Estamos siempre dispuestos a dar más por usted, es por eso que ponemos a su disposición todos los  recursos para una total satisfacción y que  reciba la mejor orientación profesional, así comprar un  vehículo Nissan será una experiencia maravillosa.
+
+Ofrecemos el servicio y los vehículos para cada estilo y ritmo de vida, para cada tipo de persona o empresa, con un estándar de rigurosa calidad, con la mejor tecnología de vanguardia, prodigios de la ingeniería, diseños de moda audaces e imponentes, todos estos componentes en insuperable armonía con la economía, el ambiente, el rendimiento y con el mejor costo-beneficio.
+
+Estamos seguros de que todo lo que usted busca  en servicio y calidad automotriz y mucho más, lo encontrará con nosotros.
+
+Luchamos cada día por ser  la mejor distribuidora de automóviles a través de un manejo adecuado de nuestro servicio, calidad y una atención humana y así permanecer en la mente del público con una imagen siempre positiva.
+
+Tenga en cuenta que Nissan Agencia Datsun es una empresa que vela por que todas sus operaciones se realicen bajo las más estrictas medidas de sostenibilidad y equilibrio con la naturaleza, además la tecnología de punta que poseen nuestros modelos contribuye a mitigar la contaminación ambiental.</p>
+            
+        </div>
+    </div>
+</body>
+</html>

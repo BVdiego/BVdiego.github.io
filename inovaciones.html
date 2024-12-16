@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación de Nissan</title>
+    <link rel="stylesheet" href="pagina.css" />
+    <style>
+        /* Estilos del menú horizontal */
+        .menu-horizontal {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: transparent; /* Fondo transparente */
+        }
+
+        .menu-horizontal > li {
+            position: relative; /* Necesario para submenús */
+        }
+
+        .menu-horizontal > li > a {
+            text-decoration: none;
+            color: #000; /* Texto en negro */
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-horizontal > li:hover > a {
+            background-color: #f0f0f0; /* Fondo claro al pasar el mouse */
+        }
+
+        /* Estilos del submenú */
+        .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 10px 0;
+            margin: 0;
+            display: none; /* Oculto por defecto */
+            border-radius: 12px;
+            border: 2px solid #007bff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .submenu li {
+            padding: 0;
+        }
+
+        .submenu li a {
+            text-decoration: none;
+            color: #343a40;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .submenu li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Mostrar el submenú al pasar el mouse */
+        .menu-horizontal > li:hover .submenu {
+            display: block;
+        }
+
+        /* Animación del submenú */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .submenu {
+            animation: fadeIn 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo con enlace al inicio -->
+    <a href="index.html">
+        <img src="NISSAN.jpg" alt="Logo de Nissan" width="200" />
+    </a>
+
+    <!-- Título principal -->
+    <h1>Fundación de Nissan</h1>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-horizontal">
+            <!-- Menú Inicio (sin submenú) -->
+            <li><a href="inicio.html">Inicio</a></li>
+            <!-- Menú Empresa -->
+            <li>
+                <a href="#">Empresa</a>
+                <ul class="submenu">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="micion-y-vicion.html">Misión y Visión</a></li>
+                    <li><a href="valores.html">Valores</a></li>
+                </ul>
+            </li>
+            <!-- Menú Fundación -->
+            <li>
+                <a href="#">Fundación</a>
+                <ul class="submenu">
+                    <li><a href="proyectos-sociales.html">Proyectos Sociales</a></li>
+                    
+                </ul>
+            </li>
+            <!-- Menú Producción -->
+            <li>
+                <a href="#">Producción</a>
+                <ul class="submenu">
+                    <li><a href="https://www.nissan.com.mx/?dcp=sem-aon_sch-brnd-goo-txt_na-aon-demogr_nmkt_nal_aon_CPA_na_alonbndna&gad_source=1&gclid=EAIaIQobChMIqfSE9eabigMVIjFECB0XXCA_EAAYASAAEgIpGvD_BwE&gclsrc=aw.ds" target="_blank">Modelos Recientes</a></li>
+                    <li><a href="fabricas.html">Fábricas</a></li>
+                   
+                </ul>
+            </li>
+            <!-- Menú Evolución -->
+            <li>
+                <a href="#">Evolución</a>
+                <ul class="submenu">
+                    <li><a href="inovaciones.html">Innovaciones</a></li>
+                    <li><a href="cronologia.html">Cronología</a></li>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor principal -->
+    <div class="cointainer">
+        <div class="text-box">
+
+            <h5>información</h5>
+    <P>Nissan Motor Co., Ltd. (en japonés: 日産自動車株式会社 Nissan Jidōsha kabushiki gaisha?) es un fabricante japonés de automóviles, con base en Nishi-ku (Yokohama). Su nombre común, Nissan, es un acrónimo de "Nippon Sangyo". Está entre las principales compañías automotrices en términos de producción anual de vehículos. Desde 1999 forma parte de una triple alianza Renault-Nissan-Mitsubishi, donde la firma francesa llegó a reducir su participación en Nissan pasando del 43% al 15%, por lo que el 28% restante serían transferidos a un fideicomiso francés.</P> 
+    
+    <P>Así, los derechos de voto del Grupo Renault y Nissan estarían limitados al 15%.[1] También tiene el 34% de Mitsubishi,[2] mientras que Renault Samsung Motors dejó de existir al ser renombrado como Renault Korea Motors, derivado de un acuerdo industrial firmado con Geely.</P>
+    
+    <P>Por otra parte, el conglomerado automotriz AvtoVAZ adquirió el 99% de la fábrica de Nissan en San Petersburgo, donde producirá modelos Lada al firmarse un acuerdo para que los activos de Nissan en Rusia pasen a manos de dicha compañía local.</P>
+    <img src="Nissan-concencionario.jpg" alt="imagen con" width="200">
+    <h5>Automovilismo</h5>
+    
+    <p>Nismo (Nissan Motorsports) es la división deportiva del fabricante.
+    En Japón, Nissan ha competido en el Campeonato Japonés de Sport Prototipos y el Super GT Japonés.</p>
+    
+    <p>La marca ha participado en las 24 Horas de Le Mans del Campeonato Mundial de Resistencia en distintos períodos desde 1986. Logró el quinto puesto en 1990 con el Nissan R90CP y el tercer puesto en 1998 con el Nissan R390 GT1, en ambos casos con tripulaciones japonesas.</p>
+    
+    <img src="220px-Nissan_R91CP_001.jpg" alt="auto de carreras"  width="270">
+    
+    <p>En Estados Unidos, Nissan ganó el Campeonato IMSA GT de 1989, 1990 y 1991 con el piloto Geoff Brabham, y logró triunfos en las 24 Horas de Daytona de 1992 y 1994 y las 12 Horas de Sebring de 1989, 1990, 1991 y 1994. Desde 1999 hasta 2002 compitió en la IndyCar Series, donde Eddie Cheever fue tercero en 2000.</p>
+    
+    <img src="Benoit_Treluyer_2010_Super_GT_Fuji_400km_qualify_Super_Lap.jpg" alt="super gt" width="240">
+    
+    <P>A partir de 2009, Nismo ha competido con el Nissan GT-R en el Campeonato Mundial de GT1 y la Blancpain Endurance Series, además de campeonatos nacionales de gran turismos.</P>
+            
+        </div>
+    </div>
+</body>
+</html>

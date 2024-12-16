@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundación de Nissan</title>
+    <link rel="stylesheet" href="pagina.css" />
+    <style>
+        /* Estilos del menú horizontal */
+        .menu-horizontal {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: transparent; /* Fondo transparente */
+        }
+
+        .menu-horizontal > li {
+            position: relative; /* Necesario para submenús */
+        }
+
+        .menu-horizontal > li > a {
+            text-decoration: none;
+            color: #000; /* Texto en negro */
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-horizontal > li:hover > a {
+            background-color: #f0f0f0; /* Fondo claro al pasar el mouse */
+        }
+
+        /* Estilos del submenú */
+        .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff; /* Fondo blanco */
+            padding: 10px 0;
+            margin: 0;
+            display: none; /* Oculto por defecto */
+            border-radius: 12px;
+            border: 2px solid #007bff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .submenu li {
+            padding: 0;
+        }
+
+        .submenu li a {
+            text-decoration: none;
+            color: #343a40;
+            padding: 10px 15px;
+            display: block;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .submenu li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Mostrar el submenú al pasar el mouse */
+        .menu-horizontal > li:hover .submenu {
+            display: block;
+        }
+
+        /* Animación del submenú */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .submenu {
+            animation: fadeIn 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo con enlace al inicio -->
+    <a href="index.html">
+        <img src="NISSAN.jpg" alt="Logo de Nissan" width="200" />
+    </a>
+
+    <!-- Título principal -->
+    <h1>Fundación de Nissan</h1>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-horizontal">
+            <!-- Menú Inicio (sin submenú) -->
+            <li><a href="inicio.html">Inicio</a></li>
+            <!-- Menú Empresa -->
+            <li>
+                <a href="#">Empresa</a>
+                <ul class="submenu">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="micion-y-vicion.html">Misión y Visión</a></li>
+                    <li><a href="valores.html">Valores</a></li>
+                </ul>
+            </li>
+            <!-- Menú Fundación -->
+            <li>
+                <a href="#">Fundación</a>
+                <ul class="submenu">
+                    <li><a href="proyectos-sociales.html">Proyectos Sociales</a></li>
+                   
+                    
+                </ul>
+            </li>
+            <!-- Menú Producción -->
+            <li>
+                <a href="#">Producción</a>
+                <ul class="submenu">
+                    <li><a href="https://www.nissan.com.mx/?dcp=sem-aon_sch-brnd-goo-txt_na-aon-demogr_nmkt_nal_aon_CPA_na_alonbndna&gad_source=1&gclid=EAIaIQobChMIqfSE9eabigMVIjFECB0XXCA_EAAYASAAEgIpGvD_BwE&gclsrc=aw.ds"  target="_blank">Modelos Recientes</a></li>
+                    <li><a href="fabricas.html">Fábricas</a></li>
+                </ul>
+            </li>
+            <!-- Menú Evolución -->
+            <li>
+                <a href="#">Evolución</a>
+                <ul class="submenu">
+                    <li><a href="inovaciones.html">Innovaciones</a></li>
+                    <li><a href="cronologia.html">Cronología</a></li>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor principal -->
+    <div class="cointainer">
+        <div class="text-box">
+            <h1>Gracias por visitar esta página</h1>
+            <p>Esta página fue creada sin fines de lucro para un proyecto escolar.</p>
+            <p><strong>Maestro:</strong> Ángel Domínguez</p>
+            <p><strong>Esta información fue obtenida de:</strong></p>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Nissan" target="_blank">Wikipedia</a></li>
+                <li>
+                    <a href="https://www.elyaquemotors.com/historia-de-la-marca-nissan/" target="_blank">
+                        El Yaque Motors
+                    </a>
+                </li>
+                <li>
+                    <a href="https://es.nissanusa.com/about/heritage.html" target="_blank">
+                        Nissan USA
+                    </a>
+                </li>
+                <li><a href="https://automotor10.com/nissan-todo-sobre-la-marca-y-su-historia-de-mas-de-90-anos/" target="_blank">
+                        Automotors10
+                    </a>
+                </li>
+                <li><a href="https://www.nissancr.com/mision-y-vision.html" target="_blank" > micion y vicion
+                    
+                    </a>
+                </li>
+                <li><a href="https://www.nissan.com.mx/sustentabilidad/comunidad.html"> comunidad Nissan mexico
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
